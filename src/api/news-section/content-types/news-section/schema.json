@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "news",
+  "info": {
+    "singularName": "news-section",
+    "pluralName": "news",
+    "displayName": "news",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "short_description": {
+      "type": "text",
+      "required": true
+    },
+    "content": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "required": true,
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "thumbnill_image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "banner_image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag"
+    },
+    "table_of_contents": {
+      "type": "richtext",
+      "required": true
+    },
+    "hot_article": {
+      "type": "boolean"
+    },
+    "highlights": {
+      "type": "boolean"
+    }
+  }
+}
