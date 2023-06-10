@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dropdown_menus",
+  "info": {
+    "singularName": "dropdown-menu",
+    "pluralName": "dropdown-menus",
+    "displayName": "Dropdown menu",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "dropdown_category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::dropdown-category.dropdown-category"
+    },
+    "display_order": {
+      "type": "integer"
+    }
+  }
+}

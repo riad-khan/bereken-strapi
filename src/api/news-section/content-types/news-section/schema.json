@@ -33,15 +33,7 @@
       "targetField": "title",
       "required": true
     },
-    "thumbnill_image": {
-      "type": "media",
-      "multiple": false,
-      "required": true,
-      "allowedTypes": [
-        "images"
-      ]
-    },
-    "banner_image": {
+    "news_image": {
       "type": "media",
       "multiple": false,
       "required": true,
@@ -64,10 +56,18 @@
       "required": true
     },
     "hot_article": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "highlights": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
+    },
+    "news_details_seo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.seo",
+      "required": true
     }
   }
 }

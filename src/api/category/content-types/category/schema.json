@@ -4,7 +4,8 @@
   "info": {
     "singularName": "category",
     "pluralName": "categories",
-    "displayName": "Category"
+    "displayName": "Category",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,6 +20,15 @@
     "slug": {
       "type": "uid",
       "targetField": "category_name",
+      "required": true
+    },
+    "display_order": {
+      "type": "integer"
+    },
+    "news_category_seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo",
       "required": true
     }
   }

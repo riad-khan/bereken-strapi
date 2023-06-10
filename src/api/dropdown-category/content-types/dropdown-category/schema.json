@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dropdown_categories",
+  "info": {
+    "singularName": "dropdown-category",
+    "pluralName": "dropdown-categories",
+    "displayName": "Dropdown category"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "status": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

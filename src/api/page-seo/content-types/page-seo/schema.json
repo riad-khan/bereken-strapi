@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "page_seos",
+  "info": {
+    "singularName": "page-seo",
+    "pluralName": "page-seos",
+    "displayName": "Page Content",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "page_title": {
+      "type": "string",
+      "required": true
+    },
+    "select_page_type": {
+      "type": "enumeration",
+      "enum": [
+        "Home",
+        "News",
+        "Compares",
+        "About",
+        "Contact"
+      ]
+    },
+    "page_seo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.seo"
+    },
+    "display_order": {
+      "type": "integer"
+    },
+    "left_image_icon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "right_image_icon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

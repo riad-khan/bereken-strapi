@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "compare_categories",
+  "info": {
+    "singularName": "compare-category",
+    "pluralName": "compare-categories",
+    "displayName": "Compare Categories",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "status": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "display_order": {
+      "type": "integer"
+    }
+  }
+}

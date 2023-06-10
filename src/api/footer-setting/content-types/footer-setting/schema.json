@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "footer_settings",
+  "info": {
+    "singularName": "footer-setting",
+    "pluralName": "footer-settings",
+    "displayName": "Footer Settings"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "footer_content": {
+      "type": "richtext",
+      "required": true
+    },
+    "footer_logo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "copyright_text": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

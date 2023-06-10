@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "compare_items",
+  "info": {
+    "singularName": "compare-item",
+    "pluralName": "compare-items",
+    "displayName": "Compare Items",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "compare_icon": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "compare_category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::compare-category.compare-category"
+    },
+    "display_order": {
+      "type": "integer"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "calculator_lists",
+  "info": {
+    "singularName": "calculator-list",
+    "pluralName": "calculator-lists",
+    "displayName": "Calculator Lists",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "calculator_name": {
+      "type": "string",
+      "required": false
+    },
+    "link": {
+      "type": "string"
+    },
+    "calculator_icon": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "show_home_page": {
+      "type": "boolean"
+    },
+    "display_order": {
+      "type": "integer"
+    }
+  }
+}
