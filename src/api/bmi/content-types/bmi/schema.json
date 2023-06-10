@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bmis",
+  "info": {
+    "singularName": "bmi",
+    "pluralName": "bmis",
+    "displayName": "bmi",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "gender_label": {
+      "type": "string",
+      "required": true
+    },
+    "gender_caption": {
+      "type": "text",
+      "required": true
+    },
+    "age_label": {
+      "type": "string",
+      "required": true
+    },
+    "age_caption": {
+      "type": "text",
+      "required": true
+    },
+    "weight_label": {
+      "type": "string",
+      "required": true
+    },
+    "height_label": {
+      "type": "string",
+      "required": true
+    },
+    "height_caption": {
+      "type": "text",
+      "required": true
+    },
+    "button_text": {
+      "type": "string",
+      "required": true
+    },
+    "button_details": {
+      "type": "text"
+    },
+    "content": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "required": true,
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "result_content": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "required": true,
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "bmi_seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo",
+      "required": false
+    }
+  }
+}
