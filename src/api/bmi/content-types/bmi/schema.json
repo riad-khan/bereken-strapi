@@ -68,6 +68,11 @@
       "repeatable": false,
       "component": "shared.seo",
       "required": false
+    },
+    "other_visitors_also_calculate": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::calculator-list.calculator-list"
     }
   }
 }
