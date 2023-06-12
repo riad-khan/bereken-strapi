@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "bmis",
+  "collectionName": "vats",
   "info": {
-    "singularName": "bmi",
-    "pluralName": "bmis",
-    "displayName": "bmi",
+    "singularName": "vat",
+    "pluralName": "vats",
+    "displayName": "Vat",
     "description": ""
   },
   "options": {
@@ -12,45 +12,37 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "gender_label": {
+    "amount_label": {
       "type": "string",
       "required": true
     },
-    "gender_caption": {
+    "amount_tooltip": {
       "type": "text",
       "required": true
     },
-    "age_label": {
+    "convert_label": {
       "type": "string",
       "required": true
     },
-    "age_caption": {
+    "convert_tooltip": {
       "type": "text",
       "required": true
     },
-    "weight_label": {
+    "rate_label": {
       "type": "string",
       "required": true
     },
-    "height_label": {
-      "type": "string",
-      "required": true
-    },
-    "height_caption": {
-      "type": "text",
-      "required": true
+    "rate_tooltip": {
+      "type": "text"
     },
     "button_text": {
       "type": "string",
       "required": true
     },
-    "button_details": {
-      "type": "text"
-    },
     "content": {
       "type": "customField",
       "options": {
-        "preset": "toolbar"
+        "preset": "toolbarBaloon"
       },
       "required": true,
       "customField": "plugin::ckeditor5.CKEditor"
@@ -63,13 +55,13 @@
       "required": true,
       "customField": "plugin::ckeditor5.CKEditor"
     },
-    "bmi_seo": {
+    "vat_seo": {
       "type": "component",
-      "repeatable": false,
+      "repeatable": true,
       "component": "shared.seo",
-      "required": false
+      "required": true
     },
-    "other_visitors_also_calculate": {
+    "others_visitor_also_calculated": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::calculator-list.calculator-list"
@@ -79,7 +71,7 @@
       "relation": "oneToMany",
       "target": "api::calculator-list.calculator-list"
     },
-    "bmi_faqs": {
+    "vat_faqs": {
       "type": "component",
       "repeatable": true,
       "component": "shared.faqs",

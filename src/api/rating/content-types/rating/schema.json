@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ratings",
+  "info": {
+    "singularName": "rating",
+    "pluralName": "ratings",
+    "displayName": "Ratings"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "ratings": {
+      "type": "string"
+    },
+    "calculator_id": {
+      "type": "string"
+    },
+    "message": {
+      "type": "text"
+    },
+    "user_ip": {
+      "type": "string"
+    }
+  }
+}

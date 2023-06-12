@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "knowledge_settings",
+  "info": {
+    "singularName": "knowledge-setting",
+    "pluralName": "knowledge-settings",
+    "displayName": "Knowledge Settings"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "section_title": {
+      "type": "string",
+      "required": true
+    },
+    "section_description": {
+      "type": "text",
+      "required": true
+    },
+    "knowledge_section_banner": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}
